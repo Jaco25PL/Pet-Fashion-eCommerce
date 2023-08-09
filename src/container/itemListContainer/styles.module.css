@@ -1,0 +1,10 @@
+.container{
+    background-color: #313131;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem 4rem;
+}
+
+.textContainer{
+    text-align: center;
+}

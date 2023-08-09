@@ -1,0 +1,27 @@
+
+
+.navContainer{
+    width: 100vw;
+}
+
+.navItems{
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.logo{
+    max-width: 5rem;
+    height: auto;
+}
+
+.listContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.listItem{
+    list-style-type: none;
+}
