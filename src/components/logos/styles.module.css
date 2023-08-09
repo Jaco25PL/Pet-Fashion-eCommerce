@@ -1,5 +1,3 @@
-
-  
   .logo {
     width: 10rem;
     padding: 1.5rem;
@@ -11,7 +9,6 @@
   .logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
-
   .react{
     animation-name: logo-spin;
     animation-duration: 15s;
