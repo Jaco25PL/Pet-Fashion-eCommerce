@@ -1,6 +1,6 @@
 import logo from "../../assets/logo-pet-family.png"
-import { CartWidget } from "../cartWidget/CartWidget"
-import styles from "./NavBar.module.css"
+import { CartWidget } from "../cartWidget/cartWidget"
+import styles from "./styles.module.css"
 
 export const NavBar = () => {
     return (
