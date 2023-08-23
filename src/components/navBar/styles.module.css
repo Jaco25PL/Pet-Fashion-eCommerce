@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    padding: 1rem 10rem;
 }
 
 .logo{
@@ -19,7 +19,7 @@
 
 .listContainer{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .listItem{

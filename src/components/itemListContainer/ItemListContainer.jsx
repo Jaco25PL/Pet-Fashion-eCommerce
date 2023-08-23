@@ -1,4 +1,4 @@
-import { Logo } from "../logos/logos"
+import { ItemList } from "../itemList/itemList"
 import styles from "./styles.module.css"
 
 export const ItemListContainer = ({greeting}) => {
@@ -7,7 +7,7 @@ export const ItemListContainer = ({greeting}) => {
             <div className={styles.textContainer}>
                 <h1>{greeting}</h1>
                 <div className={styles.itemList}>
-                    <Logo/>
+                    <ItemList/>
                 </div>
             </div>
         </div>

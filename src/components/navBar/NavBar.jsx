@@ -11,14 +11,13 @@ export const NavBar = () => {
                 </div>
                 <div>
                 <ul className={styles.listContainer}>
-                    <li className={styles.listItem}><a href="#">Productos</a></li>
-                    <li className={styles.listItem}><a href="#">Nosotros</a></li>
-                    <li className={styles.listItem}><a href="#">Contactanos</a></li>
+                    <li className={styles.listItem}><button>Electronics</button></li>
+                    <li className={styles.listItem}><button>Jewelery</button></li>
+                    <li className={styles.listItem}><button>Men's Clothing</button></li>
+                    <li className={styles.listItem}><button>Women's Clothing</button></li>
                 </ul>
                 </div>
-                <div>
-                    <CartWidget/>
-                </div>
+                <CartWidget/>
             </div>
         </nav>
     )

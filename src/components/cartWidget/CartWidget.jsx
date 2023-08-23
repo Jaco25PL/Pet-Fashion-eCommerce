@@ -3,18 +3,22 @@ import styles from "./styles.module.css"
 
 export const CartWidget = () => {
 
-    const [number, setNumber] = useState(2)
+    const [number, setNumber] = useState(0)
     const increment = () => {
         setNumber(number + 1)
+    }
+    const clear = () => {
+        setNumber(0)
     }
 
     return (
 
-        <div>
-            <button onClick={increment} className={styles.bag}>
+        <>
+            <a href="#" className={styles.bag}>
                 <i className="bi bi-bag-fill"/>
                 <span className={styles.bagNumber}>{number}</span>
-            </button>
-        </div>
+            </a>
+            <button onClick={increment}>add</button>
+        </>
     )
 }
