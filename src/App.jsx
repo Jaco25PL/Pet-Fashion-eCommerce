@@ -1,15 +1,8 @@
-import './App.css'
-import { ItemListContainer } from './components/itemListContainer/ItemListContainer'
-import { NavBar } from './components/navBar/NavBar'
+import { Router } from "./router/Router"
 
 function App() {
 
-  return (
-    <div className='container'>
-      <NavBar/>
-      <ItemListContainer greeting={"Products"}/>
-    </div>
-    )
+  return <Router/>
 }
 
 export default App

@@ -1,5 +1,5 @@
 .bag{
-    color: #fff;
+    color: #000;
     font-size: 1.4rem;
     position: relative;
     background-color: transparent;
@@ -21,6 +21,7 @@
 }
 
 .bagNumber{
+    color: #fff;
     background-color: #ff6347;
     border-radius: 50%;
     width: 1.4rem;

@@ -1,34 +1,11 @@
-import { useEffect, useState } from "react"
 import styles from "./styles.module.css"
+import { Item } from "../Item/Item"
 
-export const ItemList = () => {
-
-    const [products, setProducts] = useState([])
-
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>setProducts(json))
-            .catch(e => console.error(e))
-    }, [])
-
-
-
+export const ItemList = ({products}) => {
 
     return (
-        <div div className={styles["cardContainer"]}>
-            {/* {products.map(product => (
-                <div>
-                    <div><img className={styles["img"]} src={product.image}></img></div>
-                    <div>
-                        <ul key={product.id}>
-                            <li className={styles["title"]}>{product.title}</li>
-                            <li>{product.title}</li>
-                            <li>{product.price}</li>
-                        </ul>
-                    </div>
-                </div>
-            ))} */}
+        <div className={styles["itemList"]}>
+            {products.map(item => <Item key={item.id} item={item} />)}
         </div>
     )
 }

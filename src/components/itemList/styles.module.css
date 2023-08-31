@@ -13,3 +13,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+

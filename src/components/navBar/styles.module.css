@@ -1,20 +1,14 @@
-
-
 .navContainer{
     width: 100vw;
+    background-color: #fff;
 }
 
 .navItems{
-    background-color: #202020;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 10rem;
-}
-
-.logo{
-    max-width: 5rem;
-    height: auto;
+    justify-items: center;
+    padding: 2rem 10rem;
 }
 
 .listContainer{

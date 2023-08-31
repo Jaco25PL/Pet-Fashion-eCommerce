@@ -1,0 +1,17 @@
+.logo{
+  width: 10rem;
+  height: auto;
+  transition: all ease-out .3s;
+  -webkit-transition: all ease-out .3s;
+  -moz-transition: all ease-out .3s;
+  -ms-transition: all ease-out .3s;
+  -o-transition: all ease-out .3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}

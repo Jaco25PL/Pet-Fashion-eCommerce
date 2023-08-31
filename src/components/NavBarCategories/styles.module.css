@@ -1,0 +1,17 @@
+.categoryContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+li{
+    white-space: nowrap;
+}
+
+li:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.linkItem{
+    color: #000;
+}
