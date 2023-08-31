@@ -5,13 +5,11 @@ import { useEffect, useState } from "react"
 import { fetchData } from "../../utils/fetchData"
 
 
-
 export const ItemDetailContainer = () => {
 
     const [detail, setDetail] = useState({})
     const [loading, setLoading] = useState(true)
     const { id } = useParams()
-
 
     const showProducts = (data) => {
         const findDetail = data.find(product => product.id === parseInt(id))
