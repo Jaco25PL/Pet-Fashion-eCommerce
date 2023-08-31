@@ -5,7 +5,7 @@ import styles from "./styles.module.css"
 export const Item = ({item}) => {
 
     return (
-        <div key={item.id} className={styles["item"]}>
+        <div  className={styles["item"]}>
             <div>    
                 <div className={styles["imgContainer"]}>
                     <img className={styles["img"]} src={item.img}/>

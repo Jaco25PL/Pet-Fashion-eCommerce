@@ -1,24 +1,7 @@
-.title{
-    font-size: 1.3rem;
-    color: tomato;
-    font-weight: 500;
-}
-
-.img{
-    width: 10rem;
-    height: auto;
-}
-
-.cardContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 .itemList{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    /* padding:  0 5rem; */
 }
-
-

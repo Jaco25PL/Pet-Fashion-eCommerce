@@ -25,9 +25,8 @@ export const ItemListContainer = () => {
 
     return ( 
         <div className={styles.container}>
-            {
-                loading ? "Loading..." : <ItemList products={products}/>
-            }
+            <h1 className={styles.titleContainer}>{id ? id : "Home"}</h1>
+            {loading ? "Loading..." : <ItemList products={products}/>}
         </div>
     )
 }
