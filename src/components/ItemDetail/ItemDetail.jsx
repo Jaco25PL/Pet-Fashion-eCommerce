@@ -1,6 +1,7 @@
+import { ItemCount } from "../ItemCount/ItemCount"
 import styles from "./styles.module.css"
 
-export const ItemDetail = ({detail, count, subtract, add, reset}) => {
+export const ItemDetail = ({detail}) => {
     
     return (
 
@@ -15,12 +16,8 @@ export const ItemDetail = ({detail, count, subtract, add, reset}) => {
                 <p className={styles["aboutItem"]}>{detail.description}</p>
                 <div className={styles["aboutBuy"]}>
                     <p className={styles["aboutPrice"]}>$ {detail.price}</p>
-                    <div className={styles["countContainer"]}>
-                        <button onClick={() => subtract()} className={styles["btnCount"]}>-</button>
-                        <span className={styles["showCount"]}>{count}</span>
-                        <button onClick={() => add()} className={styles["btnCount"]}>+</button>
-                    </div>
-                    <button onClick={() => reset()} className={styles["btn"]}>Add to cart</button>     
+                    <ItemCount/>
+                    <button className={styles["btn"]}>Add to cart</button>     
                 </div>
             </div>
         </div>

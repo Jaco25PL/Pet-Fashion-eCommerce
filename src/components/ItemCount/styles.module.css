@@ -1,0 +1,38 @@
+.countContainer{
+    background-color: #232323;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+.showCount{
+    padding: 0 .8rem;
+}
+
+.btnCount{
+    padding: .4rem;
+    width: 1.5rem;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: 600;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    cursor: pointer;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.btnCount:hover{
+    background-color: #fff;
+    color: #1a1a1a;
+
+}
