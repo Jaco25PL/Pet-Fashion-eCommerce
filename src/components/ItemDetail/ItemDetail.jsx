@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-export const ItemDetail = ({detail}) => {
+export const ItemDetail = ({detail, count, subtract, add, reset}) => {
     
     return (
 
@@ -15,7 +15,12 @@ export const ItemDetail = ({detail}) => {
                 <p className={styles["aboutItem"]}>{detail.description}</p>
                 <div className={styles["aboutBuy"]}>
                     <p className={styles["aboutPrice"]}>$ {detail.price}</p>
-                     <button className={styles["btn"]}>Add to cart</button>     
+                    <div className={styles["countContainer"]}>
+                        <button onClick={() => subtract()} className={styles["btnCount"]}>-</button>
+                        <span className={styles["showCount"]}>{count}</span>
+                        <button onClick={() => add()} className={styles["btnCount"]}>+</button>
+                    </div>
+                    <button onClick={() => reset()} className={styles["btn"]}>Add to cart</button>     
                 </div>
             </div>
         </div>

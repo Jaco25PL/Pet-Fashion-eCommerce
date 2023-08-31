@@ -10,7 +10,18 @@ export const ItemDetailContainer = () => {
 
     const [detail, setDetail] = useState({})
     const [loading, setLoading] = useState(true)
+    const [count, setCount] = useState(1)
     const { id } = useParams()
+
+    const add = () => {
+        setCount(count + 1)
+    }
+    const subtract = () => {
+        setCount(count - 1)
+    }
+    const reset = () => {
+        setCount(1)
+    }
 
     const showProducts = (data) => {
         const findDetail = data.find(product => product.id === parseInt(id))
@@ -23,7 +34,7 @@ export const ItemDetailContainer = () => {
 
     return (
         <div className={styles.container}>
-            {loading ? "loading..." : <ItemDetail detail={detail}/>}
+            {loading ? "loading..." : <ItemDetail detail={detail} count={count} add={add} subtract={subtract} reset={reset}/>}
         </div>
     )
 }
