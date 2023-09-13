@@ -1,5 +1,8 @@
 .navContainer{
-    background-color: #fff;
+    background-color: #ffffffbd;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
 }
 
 .navItems{
@@ -17,4 +20,10 @@
 
 .listItem{
     list-style-type: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navItems{
+        padding: 1.5rem 0;
+    }
 }

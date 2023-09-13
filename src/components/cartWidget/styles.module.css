@@ -21,15 +21,15 @@
 }
 
 .bagNumber{
-    color: #fff;
-    background-color: #ff6347;
+    color: #000;
+    background-color: #fff;
     border-radius: 50%;
     width: 1.4rem;
     height: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
     top: 1rem;
     left: .8rem;
@@ -37,4 +37,8 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+.hide{
+    display: none;
 }

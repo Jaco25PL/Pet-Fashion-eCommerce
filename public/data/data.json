@@ -21,7 +21,7 @@
       "id": 3,
       "name": "product3",
       "category": "Wear",
-      "img": "/img/dog1.png",
+      "img": "/img/dog2.png",
       "price": 123,
       "description": "Sporty Dog Coat with Waterproof Lining for Outdoor Adventures",
       "stock": 5
@@ -30,7 +30,7 @@
       "id": 4,
       "name": "product4",
       "category": "Wear",
-      "img": "/img/dog1.png",
+      "img": "/img/dog3.png",
       "price": 123,
       "description": "Denim Dog Vest with Pockets for a Fashionable Statement",
       "stock": 15
@@ -39,7 +39,7 @@
       "id": 5,
       "name": "product5",
       "category": "Accessories",
-      "img": "/img/dogNecklace.png",
+      "img": "/img/dogBoots.png",
       "price": 123,
       "description": "Highly Reflective Safety Cat Collar for Nighttime Visibility",
       "stock": 8
@@ -48,7 +48,7 @@
       "id": 6,
       "name": "product6",
       "category": "Wear",
-      "img": "/img/cat1.png",
+      "img": "/img/cat2.png",
       "price": 123,
       "description": "Kitty Pajamas Set for a Cute and Cozy Naptime",
       "stock": 20
@@ -57,7 +57,7 @@
       "id": 7,
       "name": "product7",
       "category": "Accessories",
-      "img": "/img/dogNecklace.png",
+      "img": "/img/petBag.png",
       "price": 123,
       "description": "Customizable Pet ID Tag with Engraving Options",
       "stock": 12
@@ -66,7 +66,7 @@
       "id": 8,
       "name": "product8",
       "category": "Wear",
-      "img": "/img/cat1.png",
+      "img": "/img/cat3.png",
       "price": 123,
       "description": "Cat Cape Costume for Fun Dress-Up Play",
       "stock": 7
@@ -84,7 +84,7 @@
       "id": 10,
       "name": "product10",
       "category": "Accessories",
-      "img": "/img/dogNecklace.png",
+      "img": "/img/tiaraScarf.png",
       "price": 123,
       "description": "Cat Collar with Detachable Bowtie and Bell Charm",
       "stock": 30
@@ -93,7 +93,7 @@
       "id": 11,
       "name": "product11",
       "category": "Wear",
-      "img": "/img/dog1.png",
+      "img": "/img/dog5.png",
       "price": 123,
       "description": "Comfortable Dog Tee Shirt in Various Colors and Sizes",
       "stock": 3
@@ -102,7 +102,7 @@
       "id": 12,
       "name": "product12",
       "category": "Wear",
-      "img": "/img/cat1.png",
+      "img": "/img/cat4.png",
       "price": 123,
       "description": "Cat Halloween Outfit with Spooky and Fun Design",
       "stock": 22
@@ -110,17 +110,17 @@
     {
       "id": 13,
       "name": "product13",
-      "category": "Accessories",
-      "img": "/img/dogNecklace.png",
+      "category": "Wear",
+      "img": "/img/dog7.png",
       "price": 123,
-      "description": "Genuine Leather Dog Collar with Elegant Design",
+      "description": "Comfortable Dog Tee Shirt in Various Colors and Sizes",
       "stock": 11
     },
     {
       "id": 14,
       "name": "product14",
       "category": "Wear",
-      "img": "/img/cat1.png",
+      "img": "/img/cat5.png",
       "price": 123,
       "description": "Feline Hoodie with Adorable Ears for a Charming Look",
       "stock": 14
@@ -129,9 +129,26 @@
       "id": 15,
       "name": "product15",
       "category": "Wear",
-      "img": "/img/dog1.png",
+      "img": "/img/dog6.png",
       "price": 123,
       "description": "Paw Print Hoodie for Dogs, Stylish and Comfortable",
       "stock": 9
+    },
+    {
+      "id": 16,
+      "name": "product16",
+      "category": "Wear",
+      "img": "/img/cat1.png",
+      "price": 123,
+      "description": "Feline Hoodie with Adorable Ears for a Charming Look",
+      "stock": 14
+    },{
+      "id": 17,
+      "name": "product10",
+      "category": "Accessories",
+      "img": "/img/tiaraScarf.png",
+      "price": 123,
+      "description": "Cat Collar with Detachable Bowtie and Bell Charm",
+      "stock": 30
     }
 ]

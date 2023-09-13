@@ -1,22 +1,18 @@
 import styles from "./styles.module.css"
-import { useState } from "react"
 
-export const ItemCount = () => {
+export const ItemCount = ({quantity, add, subtract, handleAddToCart}) => {
 
-    const [count, setCount] = useState(1)
-
-    const add = () => {
-        setCount(count + 1)
-    }
-    const subtract = () => {
-        setCount(count - 1)
-    }
 
     return (
-        <div className={styles["countContainer"]}>
-            <button onClick={() => subtract()} disabled={count < 1} className={styles["btnCount"]}>-</button>
-            <span className={styles["showCount"]}>{count}</span>
-            <button onClick={() => add()} className={styles["btnCount"]}>+</button>
-        </div>
+        <>
+            <div className={styles.countContainer}>
+                <button onClick={() => subtract()} className={styles.btnCount}>-</button>
+                <span className={styles.showCount}>{quantity}</span>
+                <button onClick={() => add()} className={styles.btnCount}>+</button>
+            </div>        
+
+            <button onClick={handleAddToCart} className={styles.btn}>Add to cart</button>     
+        </>
+
     )
 } 
