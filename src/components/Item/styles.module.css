@@ -55,7 +55,7 @@
     gap: 2rem;
 }
 
-.btn{
+/* .btn{
     font-size: .9rem;
     padding: .4rem;
     box-shadow:  0.2rem 0.2rem 0.8rem #000000, -0.2rem -0.2rem 0.5rem #434343;
@@ -84,12 +84,4 @@
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-}   
-
-.linkItem{
-    color: #fff;
-}
-
-.linkItem:hover{
-    color: #000;
-}
+}    */

@@ -7,12 +7,12 @@ export const CartItem = ({item, remove}) => {
     return (
         <div className={styles.item}>
             <div className={styles.container}>
-                <img className={styles.img} src={item.img} alt={item.name} />
+                <img className={styles.img} src={item.image} alt={item.name} />
             </div>
 
             <div className={styles.container}>
                 <div>
-                    <p>{item.name} - {item.category}</p>
+                    <p>{item.title} - {item.category}</p>
                     <p>{item.description}</p>
                 </div>
                 <div>

@@ -2,8 +2,10 @@ import styles from "./styles.module.css"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { fetchData } from "../../utils/fetchData"
+// import { fetchData } from "../../utils/fetchData"
 
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase/client"
 
 export const ItemDetailContainer = () => {
 
@@ -11,15 +13,19 @@ export const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
-    const showProducts = (data) => {
-        const findDetail = data.find(product => product.id === parseInt(id))
-        setDetail(findDetail)
-    }
-
     useEffect(() => {
-        fetchData(setLoading, showProducts)
-    }, [id])
 
+        const docRef = doc(db, "products", id)
+        getDoc(docRef)
+            .then(res => {
+                setDetail(
+                    {...res.data(), id: res.id}
+                )
+            })
+            .finally(() => setLoading(false))
+
+    }, [id])
+    
     return (
         <div className={styles.container}>
             {loading ? "loading..." : <ItemDetail detail={detail} />}
