@@ -1,5 +1,6 @@
 .btn{
     font-size: .9rem;
+    width: fit-content;
     padding: .4rem;
     box-shadow:  0.2rem 0.2rem 0.8rem #000000, -0.2rem -0.2rem 0.5rem #434343;
     background-color: #232323;

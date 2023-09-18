@@ -9,7 +9,6 @@ export const NavBarCategories = () => {
             <li><Link  className={styles.linkItem} to={"/category/Wear"}>WEAR</Link></li>
             <li><Link  className={styles.linkItem} to={"/category/Accessories"}>ACCESSORIES</Link></li>
             <li><Link  className={styles.linkItem} to={"/ourStory"}>OUR STORY</Link></li>
-            <li><Link  className={styles.linkItem} to={"/contact"}>CONTACT</Link></li>
         </ul>
     )
 }
