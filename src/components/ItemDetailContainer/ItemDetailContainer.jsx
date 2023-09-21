@@ -2,10 +2,9 @@ import styles from "./styles.module.css"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-// import { fetchData } from "../../utils/fetchData"
-
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../../firebase/client"
+import { Loader } from "../Loader/Loader"
 
 export const ItemDetailContainer = () => {
 
@@ -28,7 +27,7 @@ export const ItemDetailContainer = () => {
     
     return (
         <div className={styles.container}>
-            {loading ? "loading..." : <ItemDetail detail={detail} />}
+            {loading ? <Loader/> : <ItemDetail detail={detail} />}
         </div>
     )
 }

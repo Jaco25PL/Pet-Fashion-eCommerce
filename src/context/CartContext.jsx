@@ -1,3 +1,5 @@
+import "../App.css"
+import Toastify from "toastify-js"
 import { createContext, useEffect, useState } from "react"
 
 export const CartContext = createContext()
@@ -6,7 +8,6 @@ export const CartProvider = ({children}) => {
     
     const initialCart = JSON.parse(localStorage.getItem("cart")) || []
     const [cart, setCart] = useState(initialCart)
-
 
     const addToCart = (item, quantity) => {
 
@@ -21,6 +22,17 @@ export const CartProvider = ({children}) => {
             newCart.push(inCart)
         }
         setCart(newCart)
+
+        Toastify({
+            text: "Product added | Click to checkout",
+            className: "modal",
+            duration: 4000,
+            destination: "/cart",
+            style: {
+                background: "linear-gradient(to right, #111, #444)",
+                borderRadius: ".5rem"
+            }
+        }).showToast()
     }
 
     const cartItemsQuantity = () => {

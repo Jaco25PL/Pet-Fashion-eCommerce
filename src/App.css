@@ -29,3 +29,32 @@
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }   
+
+.btnStatic:hover{
+    transform: none;
+    cursor: default;
+    color: #ffffff;
+    background-color: #232323;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
+
+.modal.toastify{
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.modal.toastify:hover{
+   color: #d9b2ff;
+   background-color: linear-gradient(to right, #e8e8e8, #c7c7c7) !important;
+   transform: scale(1.06) !important;
+   -webkit-transform: scale(1.06) !important;
+   -moz-transform: scale(1.06) !important;
+   -ms-transform: scale(1.06) !important;
+   -o-transform: scale(1.06) !important;
+}

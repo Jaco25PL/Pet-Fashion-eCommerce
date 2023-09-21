@@ -1,5 +1,5 @@
-import { useContext, useState } from "react"
 import styles from "./styles.module.css"
+import { useContext, useState } from "react"
 import { CartContext } from "../../context/cartContext"
 import { CartItem } from "../CartItem/CartItem"
 import { CheckOut } from "../CheckOut/CheckOut"
@@ -9,16 +9,13 @@ export const Cart = () => {
     const { cart, cartItemsQuantity, clearCart, remove, totalCost } = useContext(CartContext)
     const quantity = cartItemsQuantity()
     const unit = () =>  quantity > 1 ? (`${quantity} Items`) : `One Item`
-
-    const [ checkout, setCheckout ] = useState(false)
-
-    if(checkout){
-        return <CheckOut items={cartItemsQuantity} total={totalCost} quitCheckout={setCheckout}/>
-    }
+    const [ checkout, setCheckout] = useState(false)
 
     return (
         <>
             <div className={cart.length > 0 ? styles.cartContainer : styles.displayNone}>
+
+                {checkout && <CheckOut setCheckout={setCheckout}/> }
         
                 <div className={styles.cart}>
                     <div className={styles.cartTitle}><h1>Shopping Cart</h1></div>
@@ -54,7 +51,6 @@ export const Cart = () => {
                     <p className={styles.cartSubtitle}>Your cart is empty :(</p>
                 </div>
             </div>
-
         </>
     )
 } 

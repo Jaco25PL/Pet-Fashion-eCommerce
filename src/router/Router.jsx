@@ -4,6 +4,7 @@ import { ItemListContainer } from "../components/ItemListContainer/ItemListConta
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
 import { AboutUs } from "../components/AboutUs/AboutUs"
 import { Cart } from "../components/Cart/Cart"
+import { CheckOut } from "../components/CheckOut/CheckOut"
 
 export const Router = () => {
 
@@ -16,6 +17,7 @@ export const Router = () => {
             <Route path='/item/:id' element={<ItemDetailContainer/>}/>
             <Route path="/ourStory" element={<AboutUs/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/cart/checkout" element={<CheckOut/>}/>
           </Routes>
         </BrowserRouter>
     )

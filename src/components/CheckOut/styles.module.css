@@ -1,17 +1,18 @@
 .background{
-    background-color: #313131a4;
-    backdrop-filter: blur(8px);
+    background-color: #23232369;
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100vw;
+    width: 100%;
+    height: calc(100vh);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .container{
+    z-index: 300;
     background-color: #ffffffa4;
     backdrop-filter: blur(5px);
     position: relative;
@@ -53,7 +54,7 @@
 .back{
     color: #fff;
     font-weight: 800;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     height: 1.5rem;
     border: none;
     width: 1.5rem;
@@ -106,6 +107,8 @@ input::placeholder{
     color: #555555a3;
 }
 
+
+
 .userBuy:first-child{
     color: #232323;
     font-size: 2rem;
@@ -128,4 +131,22 @@ input::placeholder{
     justify-content: space-between;
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    z-index: 1;
+    position: relative;
+
+}
+
+.opacity{
+    opacity: .5;
+}
+
+.loading{
+    background-color: #23232369;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }

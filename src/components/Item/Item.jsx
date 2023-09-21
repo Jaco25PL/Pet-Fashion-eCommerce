@@ -1,8 +1,9 @@
-import styles from "./styles.module.css"
 import "../../App.css"
+import styles from "./styles.module.css"
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
+
 
 
 export const Item = ({item}) => {
@@ -13,7 +14,7 @@ export const Item = ({item}) => {
         <div  className={styles.item}>
             <div>    
                 <div className={styles.imgContainer}>
-                    <img className={styles.img} src={item.image}/>
+                    <img className={styles.img} src={item.image} alt={item.name}/>
                 </div>
                 <div className={styles.textContainer}>
                     <p className={styles.textItem}>{item.title}</p>

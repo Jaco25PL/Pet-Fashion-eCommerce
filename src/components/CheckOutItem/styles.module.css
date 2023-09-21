@@ -1,0 +1,113 @@
+.container{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemContainer{
+    background-color: #e6e6e6;
+    padding: 1rem 2rem 3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.item{
+    border-bottom: 2px dashed #898989;
+    padding: 1rem;
+    color: #232323;
+}
+
+.close{
+    color: #fff;
+    font-weight: 800;   
+    background-color: #8a2be2;
+    height: 1.5rem;
+    border: none;
+    width: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+    -o-transition: all ease-in .3s;
+}
+    
+    
+.close:hover{
+    background-color: #c54545;
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+.itemContainer > div:first-child{
+    display: flex;
+    justify-content: end;
+}
+
+.item:first-child{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.item:nth-child(3) > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ty{
+    color: #232323;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > button{
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all ease-in .2s;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transition: all ease-in .2s;
+    -moz-transition: all ease-in .2s;
+    -ms-transition: all ease-in .2s;
+    -o-transition: all ease-in .2s;
+}
+
+footer > button:hover{
+    background-color: #8a2be2;
+}
