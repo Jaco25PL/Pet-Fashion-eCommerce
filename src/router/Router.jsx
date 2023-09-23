@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { CartProvider } from "../context/cartContext"
+
 import { NavBar } from "../components/NavBar/NavBar"
+
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer"
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
 import { AboutUs } from "../components/AboutUs/AboutUs"
 import { Cart } from "../components/Cart/Cart"
 import { CheckOut } from "../components/CheckOut/CheckOut"
-import { CartProvider } from "../context/cartContext"
 
 export const Router = () => {
 
