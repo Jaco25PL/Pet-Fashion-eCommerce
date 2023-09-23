@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 import { useEffect, useState } from "react"
-import { ItemList } from "../ItemList/itemList"
+import { ItemList } from "../ItemList/ItemList"
 import { Loader } from "../Loader/Loader"
 import { useParams } from "react-router-dom"
 import { db } from "../../firebase/client"
