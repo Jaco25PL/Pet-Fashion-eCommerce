@@ -5,10 +5,12 @@ import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetai
 import { AboutUs } from "../components/AboutUs/AboutUs"
 import { Cart } from "../components/Cart/Cart"
 import { CheckOut } from "../components/CheckOut/CheckOut"
+import { CartProvider } from "../context/cartContext"
 
 export const Router = () => {
 
     return (       
+      <CartProvider>
         <BrowserRouter>
           <NavBar/>
           <Routes>
@@ -20,5 +22,7 @@ export const Router = () => {
             <Route path="/cart/checkout" element={<CheckOut/>}/>
           </Routes>
         </BrowserRouter>
+      </CartProvider>
+      
     )
 }
