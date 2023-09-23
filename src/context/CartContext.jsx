@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react"
 
 export const CartContext = createContext()
 
-function CartProvider({children}) {
+export const CartProvider = ({children}) => {
     
     const initialCart = JSON.parse(localStorage.getItem("cart")) || []
     const [cart, setCart] = useState(initialCart)
@@ -81,6 +81,3 @@ function CartProvider({children}) {
         </CartContext.Provider>
     )
 }
-
-
-export default CartProvider

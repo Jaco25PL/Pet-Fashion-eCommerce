@@ -1,0 +1,26 @@
+.container{
+    background-color: #292929;
+    padding: 1rem;
+    margin: 2rem 10rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.item:first-child{
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+
+.item:last-child{
+    background-color: #313131;
+    padding: 2rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    text-align: justify;
+}
