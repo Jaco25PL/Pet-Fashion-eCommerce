@@ -3,19 +3,12 @@ import styles from "./styles.module.css"
 import Toastify from "toastify-js"
 import { Logo } from "../Logo/Logo" 
 import { Link } from "react-router-dom"
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
 
 export const CheckOutItem = ({ client, orderId}) => {
 
     const { cart, cartItemsQuantity, totalCost, clearCart } = useContext(CartContext)
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         console.log("pum")
-    //         clearCart()
-    //     }, 5000)
-    // },[])
 
     const handleCopy = () => {
         const id = `order Id: ${orderId}`
