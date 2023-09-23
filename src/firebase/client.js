@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLQQDYRah7BO7U9ERQrFZO9sRw4Eaf5AQ",
-  authDomain: "petfamily-ecommerce.firebaseapp.com",
-  projectId: "petfamily-ecommerce",
-  storageBucket: "petfamily-ecommerce.appspot.com",
-  messagingSenderId: "705040721317",
-  appId: "1:705040721317:web:661e9000e399f27070744c"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId 
 }
 
 const app = initializeApp(firebaseConfig)
