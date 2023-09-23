@@ -1,4 +1,6 @@
 import styles from "./styles.module.css"
+import "../../App.css"
+
 
 export const ItemCount = ({quantity, add, subtract, handleAddToCart}) => {
 
@@ -11,7 +13,7 @@ export const ItemCount = ({quantity, add, subtract, handleAddToCart}) => {
                 <button onClick={() => add()} className={styles.btnCount}>+</button>
             </div>        
 
-            <button onClick={handleAddToCart} className={styles.btn}>Add to cart</button>     
+            <button onClick={handleAddToCart} className="btn">Add to cart</button>     
         </>
 
     )

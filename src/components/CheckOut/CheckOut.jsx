@@ -51,7 +51,9 @@ export const CheckOut = ( {setCheckout} ) => {
                 .then((doc) => {
                     setOrderId(doc.id)
                     setLoading(false)
+
                 })
+
         }else{
             Toastify({
                 text: "You must sign up",
@@ -60,7 +62,7 @@ export const CheckOut = ( {setCheckout} ) => {
                 style: {
                     background: "linear-gradient(to right, #111, #444)",
                     borderRadius: ".5rem",
-                    cursor: "default",
+                    cursor: "default"
                 }
             }).showToast()
         }

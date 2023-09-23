@@ -1,4 +1,5 @@
 import styles from "./styles.module.css"
+import "../../App.css"
 
 export const CartItem = ({item, remove}) => {
 
@@ -24,7 +25,7 @@ export const CartItem = ({item, remove}) => {
 
             <div className={styles.container}>
                 <span>Total Price: ${item.price * item.quantity}</span>
-                <button onClick={() => remove(item.id)} className={styles.btn}>Remove</button>
+                <button onClick={() => remove(item.id)} className="btn">Remove</button>
             </div>
         </div>
     )

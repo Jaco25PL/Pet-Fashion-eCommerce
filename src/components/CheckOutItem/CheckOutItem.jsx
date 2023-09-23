@@ -3,13 +3,19 @@ import styles from "./styles.module.css"
 import Toastify from "toastify-js"
 import { Logo } from "../Logo/Logo" 
 import { Link } from "react-router-dom"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { CartContext } from "../../context/cartContext"
 
 export const CheckOutItem = ({ client, orderId}) => {
 
-    const { cart, cartItemsQuantity, totalCost } = useContext(CartContext)
+    const { cart, cartItemsQuantity, totalCost, clearCart } = useContext(CartContext)
 
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         console.log("pum")
+    //         clearCart()
+    //     }, 5000)
+    // },[])
 
     const handleCopy = () => {
         const id = `order Id: ${orderId}`
@@ -31,7 +37,7 @@ export const CheckOutItem = ({ client, orderId}) => {
         <div className={styles.container}>
             <div id="iC" className={styles.itemContainer}>
                 <div>
-                    <Link to="/" className={`bi bi-x-lg ${styles.close}`}/>
+                    <Link to="/" onClick={clearCart} className={`bi bi-x-lg ${styles.close}`}/>
                 </div>
                 <div>
                     <div className={styles.item}>

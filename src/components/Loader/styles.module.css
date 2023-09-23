@@ -7,6 +7,7 @@
     background-color: transparent;
 }
 
+
 .loader {
     height: 30px;
     aspect-ratio: 2.5;
@@ -29,3 +30,8 @@
     95%,
     100%  {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
   }
+
+  
+.dark{
+  --_g: no-repeat radial-gradient(farthest-side,#000 90%,#ff020200);
+}

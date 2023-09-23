@@ -38,8 +38,8 @@ export const Cart = () => {
                         <div>${totalCost()}</div>
                     </div>
                     <div className={styles.cartPriceInfo}>
-                        <button onClick={clearCart} className={styles.btn}>Clear Cart</button>
-                        <button onClick={() => setCheckout(true)} className={styles.btn}>Checkout</button>
+                        <button onClick={clearCart} className={`btn ${styles.btn}`}>Clear Cart</button>
+                        <button onClick={() => setCheckout(true)} className={`btn ${styles.btn}`}>Checkout</button>
                     </div>
                     
                 </div>

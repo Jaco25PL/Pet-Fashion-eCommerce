@@ -5,13 +5,31 @@
 
 li{
     white-space: nowrap;
-}
-
-li:hover{
-    font-weight: 700;
-    cursor: pointer;
+    position: relative;
 }
 
 .linkItem{
     color: #000;
+    
+}
+
+.linkItem::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.5px;
+    background-color: #000;
+    opacity: 0;
+    transition: all ease-out .2s;
+    -webkit-transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -ms-transition: all ease-out .2s;
+    -o-transition: all ease-out .2s;
+}
+  
+.linkItem:hover::before {
+    opacity: 1;
+    bottom: -10px;
 }

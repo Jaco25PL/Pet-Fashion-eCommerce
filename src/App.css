@@ -2,8 +2,8 @@
     font-size: .9rem;
     width: fit-content;
     padding: .4rem;
-    box-shadow:  0.2rem 0.2rem 0.8rem #000000, -0.2rem -0.2rem 0.5rem #434343;
-    background-color: #232323;
+    box-shadow:  0.2rem 0.2rem 0.5rem #111, -0.2rem -0.2rem 0.5rem #555555;
+    background-color: #313131;
     border: none;
     border-radius: .3rem;
     color: #fff;    
@@ -43,15 +43,37 @@
 
 
 .modal.toastify{
+    color: #000;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
+
+.modal.toastify::after{
+    content: "Review cart";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 6.5rem;
+    margin: auto;
+    border-radius: .5rem;
+    height: 2rem;
+    background: linear-gradient(20deg, #aaa, #fff);
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
 .modal.toastify:hover{
    color: #d9b2ff;
-   background-color: linear-gradient(to right, #e8e8e8, #c7c7c7) !important;
    transform: scale(1.06) !important;
    -webkit-transform: scale(1.06) !important;
    -moz-transform: scale(1.06) !important;

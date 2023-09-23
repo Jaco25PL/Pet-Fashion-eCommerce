@@ -1,10 +1,11 @@
 import styles from "./styles.module.css"
 
-export const  Loader = () => {
+export const  Loader = ({color}) => {
+
     return (
     
         <div className={styles.container}>
-            <div className={styles.loader}></div>
+            <div className={`${styles.loader} ${color && styles.dark}`}/>
         </div>
     )
 }

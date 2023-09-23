@@ -1,5 +1,5 @@
 .container{
-    background-color: #313131;
+    background-color: #292929;
     padding: 1rem;
     margin: 2rem 10rem;
     border-radius: 1rem;
@@ -9,13 +9,13 @@
     -o-border-radius: 1rem;
 }
 
+.titleContainer{
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 760px) {
     .container{
         margin: 2rem 0;
     }
-}
-
-.titleContainer{
-    padding: 1rem 0 2rem;
-    text-align: center;
 }

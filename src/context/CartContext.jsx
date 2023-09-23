@@ -12,7 +12,6 @@ export const CartProvider = ({children}) => {
     const addToCart = (item, quantity) => {
 
         const inCart = { ...item, quantity}
-
         const newCart = [...cart]
         const currentCart = newCart.find(prod => prod.id === item.id)
 
@@ -24,16 +23,26 @@ export const CartProvider = ({children}) => {
         setCart(newCart)
 
         Toastify({
-            text: "Product added | Click to checkout",
+            text: "Review cart",
             className: "modal",
-            duration: 4000,
+            duration: 5000,
             destination: "/cart",
             style: {
                 background: "linear-gradient(to right, #111, #444)",
-                borderRadius: ".5rem"
+                borderRadius: ".5rem",
+            }
+        }).showToast()
+        Toastify({
+            text: "Product added",
+                style: {
+                background: "linear-gradient(to right, #111, #444)",
+                borderRadius: ".5rem",
+                cursor: "default"
             }
         }).showToast()
     }
+
+    
 
     const cartItemsQuantity = () => {
         return cart.reduce((acc, item) => acc + item.quantity, 0)

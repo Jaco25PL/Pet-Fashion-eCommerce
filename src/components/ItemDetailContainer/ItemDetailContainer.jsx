@@ -24,7 +24,7 @@ export const ItemDetailContainer = () => {
             .finally(() => setLoading(false))
 
     }, [id])
-    
+
     return (
         <div className={styles.container}>
             {loading ? <Loader/> : <ItemDetail detail={detail} />}

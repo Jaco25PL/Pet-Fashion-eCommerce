@@ -37,7 +37,7 @@ export const ItemListContainer = () => {
     return ( 
         <div className={styles.container}>
             <h1 className={styles.titleContainer}>{categoryId ? categoryId : "Home"}</h1>
-            {loading ? <Loader/> : <ItemList products={products} />}
+            {loading ? <Loader color={false}/> : <ItemList products={products} />}
         </div>
     )
 }
