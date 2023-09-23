@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { NavBar } from "../components/navBar/NavBar"
+import { NavBar } from "../components/NavBar/NavBar"
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer"
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
 import { AboutUs } from "../components/AboutUs/AboutUs"
@@ -11,6 +11,7 @@ export const Router = () => {
 
     return (       
       <CartProvider>
+
         <BrowserRouter>
           <NavBar/>
           <Routes>
@@ -22,7 +23,7 @@ export const Router = () => {
             <Route path="/cart/checkout" element={<CheckOut/>}/>
           </Routes>
         </BrowserRouter>
+
       </CartProvider>
-      
     )
 }
