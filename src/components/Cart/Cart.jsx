@@ -3,6 +3,7 @@ import { useContext, useState } from "react"
 import { CartContext } from "../../context/cartContext"
 import { CartItem } from "../CartItem/CartItem"
 import { CheckOut } from "../CheckOut/CheckOut"
+import { Link } from "react-router-dom"
 
 export const Cart = () => {
 
@@ -11,9 +12,23 @@ export const Cart = () => {
     const unit = () =>  quantity > 1 ? (`${quantity} Items`) : `One Item`
     const [ checkout, setCheckout] = useState(false)
 
+    if(cart.length === 0){
+        return (
+            <div className={styles.cartContainer}>
+                <div className={styles.emptyCart}>
+                    <div className={styles.cartTitle}><h1>Shopping Cart</h1></div>
+                    <div className={styles.emptyCartItems}>
+                        <p>Your cart is empty :(</p>
+                        <Link className="btn" to="/">Back to Home</Link>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <>
-            <div className={cart.length > 0 ? styles.cartContainer : styles.displayNone}>
+            <div className={styles.cartContainer}>
 
                 {checkout && <CheckOut setCheckout={setCheckout}/> }
         
@@ -45,12 +60,6 @@ export const Cart = () => {
                 </div>
             </div>
                     
-            <div className={cart.length === 0 ? styles.cartContainer : styles.displayNone}>
-                <div className={styles.cart}>
-                    <div className={styles.cartTitle}><h1>Shopping Cart</h1></div>
-                    <p className={styles.cartSubtitle}>Your cart is empty :(</p>
-                </div>
-            </div>
         </>
     )
 } 

@@ -1,4 +1,5 @@
 .background{
+    z-index: 100;
     background-color: #23232369;
     backdrop-filter: blur(10px);
     position: fixed;
