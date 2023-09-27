@@ -29,3 +29,15 @@
         padding: 1.5rem 0;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .navContainer{
+        padding: 0 1.5rem ;
+    }
+    .navItems{
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

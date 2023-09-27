@@ -1,4 +1,4 @@
-.logo{
+.logo {
   width: 10rem;
   height: auto;
   transition: all ease-out .3s;
@@ -8,10 +8,27 @@
   -o-transition: all ease-out .3s;
 }
 
-.logo:hover{
+@media screen and (min-width: 550px) {
+    .logo:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 8rem;
+  }
+  .logo:active{
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
+  }
 }

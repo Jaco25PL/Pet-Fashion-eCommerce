@@ -12,13 +12,7 @@
     -o-transition: all ease-out .3s;
 }
 
-.bag:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
+
 
 .bagNumber{
     color: #000;
@@ -41,4 +35,25 @@
 
 .hide{
     display: none;
+}
+
+
+@media screen and (min-width: 550px) {
+    .bag:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }   
+}
+
+@media screen and (max-width: 850px) {
+    .bag:active{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    } 
 }

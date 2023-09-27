@@ -3,7 +3,7 @@ import styles from "./styles.module.css"
 import Toastify from "toastify-js"
 import { Logo } from "../Logo/Logo" 
 import { Link } from "react-router-dom"
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { CartContext } from "../../context/cartContext"
 
 export const CheckOutItem = ({ client, orderId}) => {
@@ -23,14 +23,20 @@ export const CheckOutItem = ({ client, orderId}) => {
                 cursor: "default",
             }
         }).showToast()
-    }    
+    }
+    
+    useEffect(() => {
+        return () => {
+            clearCart()
+        } 
+    },[])
 
     return (
 
         <div className={styles.container}>
             <div id="iC" className={styles.itemContainer}>
                 <div>
-                    <Link to="/" onClick={clearCart} className={`bi bi-x-lg ${styles.close}`}/>
+                    <Link to="/" className={`bi bi-x-lg ${styles.close}`}/>
                 </div>
                 <div>
                     <div className={styles.item}>
