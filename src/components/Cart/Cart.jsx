@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-import { useContext, useState } from "react"
+import { useContext, useState , useEffect} from "react"
 import { CartContext } from "../../context/cartContext"
 import { CartItem } from "../CartItem/CartItem"
 import { CheckOut } from "../CheckOut/CheckOut"

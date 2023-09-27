@@ -14,7 +14,6 @@ export const ItemListContainer = () => {
     const { categoryId } = useParams()
 
     
-    
     const productsRef = collection(db, "products")
     const q = categoryId ? query(productsRef, where("category", "==", categoryId)) : productsRef
     

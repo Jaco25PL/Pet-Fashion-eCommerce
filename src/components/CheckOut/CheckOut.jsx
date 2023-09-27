@@ -22,6 +22,9 @@ export const CheckOut = ( {setCheckout} ) => {
         email: ""
     })
 
+    const toScroll = (behavior) => {
+        return document.querySelector('body').style.overflow = behavior
+    }
 
     const handleForm = (e) => {
         setConfirm(true)
@@ -85,6 +88,13 @@ export const CheckOut = ( {setCheckout} ) => {
         confirm && sendModal()
     }, [confirm])
 
+    useEffect(() => {
+        toScroll("hidden")
+
+        return () => {
+            toScroll("auto")
+        }
+    },[])
 
     if(loading === false){
         return(
