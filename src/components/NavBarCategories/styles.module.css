@@ -29,7 +29,95 @@ li{
     -o-transition: all ease-out .2s;
 }
   
-.linkItem:hover::before {
+
+
+input{
+    display: none;
+}
+
+.openMenu{
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    font-size: 2rem;
+    color: #000;
+    right: 3.5rem;
+    transition: all ease-out .3s;
+    -webkit-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -ms-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
+}
+.openMenu:active{
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+
+input:checked + .categoryContainer {
+    right: 0;
     opacity: 1;
-    bottom: -10px;
+
+}
+
+input:checked ~ .bgFilter{
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 850px) {
+    .linkItem:hover::before {
+        opacity: 1;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .openMenu{
+        display: flex;
+    }
+   .categoryContainer{
+        flex-direction: column;
+        background-color: #ffffffbd;
+        position: fixed;
+        top: 4rem;
+        right: -10rem;
+        padding: 2rem 4rem 2rem 2rem;
+        height: 100vh;
+        opacity: 0;
+        z-index: 100;
+        transition: all ease-in-out .3s;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+    }
+
+    .bgFilter{
+        background-color: #00000080;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 20;
+        opacity: 0;
+        transition: all ease-in-out .3s;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+    }
+    .linkItem:focus::before {
+        opacity: 1;
+        bottom: -10px;
+    }
+}
+
+body{
+    overflow-x: hidden;
 }
