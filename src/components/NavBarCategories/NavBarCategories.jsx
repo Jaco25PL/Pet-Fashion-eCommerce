@@ -6,7 +6,7 @@ export const NavBarCategories = () => {
     return (
         <div>
             <label htmlFor="menu" className={styles.openMenu}><i className="bi bi-list"></i></label>
-            <input type="checkbox" id="menu"/>
+            <input className={styles.menu} type="checkbox" id="menu"/>
             <ul className={styles.categoryContainer}>
                 <li><Link  className={styles.linkItem} to={"/"}>HOME</Link></li>
                 <li><Link  className={styles.linkItem} to={"/category/Wear"}>WEAR</Link></li>
@@ -15,6 +15,5 @@ export const NavBarCategories = () => {
             </ul>
             <span className={styles.bgFilter}/>
         </div>
-        
     )
 }

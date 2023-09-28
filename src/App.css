@@ -20,26 +20,55 @@
     -o-transition: all ease .3s;
 }
 
-.btn:hover{
-    color: #232323;
-    background-color: #ffffff;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}   
 
-.btnStatic:hover{
-    transform: none;
-    cursor: default;
-    color: #ffffff;
-    background-color: #232323;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
+@media screen and (min-width: 800px) {
+    
+    .btn:hover{
+        color: #232323;
+        background-color: #ffffff;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }   
+
+    .btnStatic:hover{
+        transform: none;
+        cursor: default;
+        color: #ffffff;
+        background-color: #232323;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    
+    .btn:active{
+        color: #232323;
+        background-color: #ffffff;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }   
+    
+    .btnStatic:active{
+        transform: none;
+        cursor: default;
+        color: #ffffff;
+        background-color: #232323;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
 
 
 .modal.toastify{

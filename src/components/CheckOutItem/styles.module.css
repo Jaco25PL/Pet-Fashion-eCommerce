@@ -112,3 +112,9 @@ footer > button{
 footer > button:hover{
     background-color: #8a2be2;
 }
+
+@media screen and (max-width: 850px){
+    .itemContainer{
+        padding: 1rem .5rem;
+    }
+}

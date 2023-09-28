@@ -29,9 +29,35 @@ li{
     -o-transition: all ease-out .2s;
 }
   
+.back{
+    display: none;
+    color: #000;
+    background-color: #9a9a9a;
+    width: fit-content;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    transition: all ease-out .4s;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transition: all ease-out .4s;
+    -moz-transition: all ease-out .4s;
+    -ms-transition: all ease-out .4s;
+    -o-transition: all ease-out .4s;
+    cursor: pointer;
+}
 
+.back:active{
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
 
-input{
+.menu{
     display: none;
 }
 
@@ -58,16 +84,15 @@ input{
     -o-transform: scale(1.15);
 }
 
-input:checked + .categoryContainer {
-    right: 0;
+.menu:checked + .categoryContainer {
     opacity: 1;
-
+    display: flex;
 }
 
-input:checked ~ .bgFilter{
+.menu:checked ~ .bgFilter{
     opacity: 1;
+    display: block;
 }
-
 
 @media screen and (min-width: 850px) {
     .linkItem:hover::before {
@@ -77,17 +102,23 @@ input:checked ~ .bgFilter{
 }
 
 @media screen and (max-width: 850px) {
+    .back{
+        display: block;
+    }
+
     .openMenu{
         display: flex;
     }
    .categoryContainer{
+        display: none;
         flex-direction: column;
         background-color: #ffffffbd;
         position: fixed;
         top: 4rem;
-        right: -10rem;
+        right: 0;
         padding: 2rem 4rem 2rem 2rem;
         height: 100vh;
+        width: 50%;
         opacity: 0;
         z-index: 100;
         transition: all ease-in-out .3s;
@@ -98,14 +129,15 @@ input:checked ~ .bgFilter{
     }
 
     .bgFilter{
-        background-color: #00000080;
-        position: absolute;
+        display: none;
+        position: fixed;
         top: 4rem;
         left: 0;
         height: 100vh;
         width: 100%;
-        z-index: 20;
+        z-index: 0;
         opacity: 0;
+        background-color: #00000080;
         transition: all ease-in-out .3s;
         -webkit-transition: all ease-in-out .3s;
         -moz-transition: all ease-in-out .3s;

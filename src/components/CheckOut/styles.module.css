@@ -87,7 +87,7 @@
     -o-transform: scale(1.08);
 }
 
-input{
+.user input{
     margin-bottom: 1rem;
     padding: 0 .7rem;
     font-size: 1.2rem;
@@ -103,7 +103,7 @@ input{
     background-color: #ededed;
 }
 
-input::placeholder{
+.user input::placeholder{
     font-size: 1.2rem;
     color: #555555a3;
 }
@@ -150,4 +150,39 @@ input::placeholder{
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        height: fit-content;
+        padding: 1rem;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        top: 0;
+    }
+    .userInfo{
+        margin-top: 2rem;
+    }
+    .user:first-child{
+        font-size: 1rem;
+    }
+    .user input{
+        font-size: 1rem;
+        height: 1.8rem;
+    }
+    .user input::placeholder{
+        font-size: 1rem;
+    }
+    .userBuy:first-child{
+        margin: 1rem 0 .5rem 2rem;
+        font-size: 1rem;
+    }
+    .userBuyInfo{
+        font-size: 1rem;
+    }
+    .userBuyInfo:first-child{
+        margin-bottom: 1rem;
+    }
+
 }
