@@ -26,10 +26,15 @@ export const CheckOutItem = ({ client, orderId}) => {
     }
     
     useEffect(() => {
+        window.addEventListener("beforeunload", () => {
+            clearCart()
+        })
         return () => {
             clearCart()
         } 
     },[])
+
+  
 
     return (
 
@@ -43,7 +48,7 @@ export const CheckOutItem = ({ client, orderId}) => {
                         <Logo/>
                     </div>
                     <div className={styles.item}>
-                        <div>Order ID: {orderId}</div>
+                        <div>Order ID: {orderId}c</div>
                         <div>Name: {client.userName}</div>
                     </div>
                     <div className={styles.item}>
