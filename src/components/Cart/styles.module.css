@@ -121,4 +121,8 @@
         font-size: 1rem;
         padding: .4rem 1rem;
     }
+    .cartSubtitle{
+        margin: 2rem;
+        text-align: center;
+    }
 }

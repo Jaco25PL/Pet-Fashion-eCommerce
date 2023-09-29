@@ -9,3 +9,9 @@
     -o-border-radius: 1rem;
 }
 
+@media screen and (max-width: 850px){
+    .container{
+        margin: 2rem 1rem;
+        padding: 0;
+    }
+}

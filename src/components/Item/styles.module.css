@@ -19,11 +19,13 @@
     max-height: 100%;
     max-width: 100%;
     padding: 0.2rem;
+    z-index: 90;
 }
 
 .imgContainer{
-    background-color: #fff;
+    position: relative;
     height: 277px;
+    background-color: #fff;
     min-width: 14rem;
     overflow: hidden;
     display: flex;

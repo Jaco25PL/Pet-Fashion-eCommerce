@@ -80,3 +80,19 @@
 .aboutPrice{
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 850px){
+    .itemContainer{
+        padding: 0;
+    }   
+
+    .item{
+        padding: 0;
+    }
+    .about{
+        margin: 0 1rem 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

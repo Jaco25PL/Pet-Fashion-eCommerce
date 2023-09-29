@@ -34,4 +34,6 @@
   
 .dark{
   --_g: no-repeat radial-gradient(farthest-side,#000 90%,#ff020200);
+  position: absolute;
+  z-index: 50;
 }

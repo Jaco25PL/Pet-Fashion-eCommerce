@@ -15,13 +15,15 @@ export const Item = ({item}) => {
     const handleLoading = () => {
         setLoadImage(false)
     }
-
+    
     return (
         <div  className={styles.item}>
             <div>    
                 <div className={styles.imgContainer}>
+                <>                
                     {loadImage && <Loader color={true}/>}
                     <img className={styles.img} src={item.image} alt={item.name} onLoad={handleLoading}/>
+                </>
                 </div>
                 <div className={styles.textContainer}>
                     <p className={styles.textItem}>{item.title}</p>

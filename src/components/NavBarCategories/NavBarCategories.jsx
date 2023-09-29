@@ -4,7 +4,7 @@ import styles from "./styles.module.css"
 export const NavBarCategories = () => {
 
     return (
-        <div>
+        <div className={styles.container}>
             <label htmlFor="menu" className={styles.openMenu}><i className="bi bi-list"></i></label>
             <input className={styles.menu} type="checkbox" id="menu"/>
             <ul className={styles.categoryContainer}>
