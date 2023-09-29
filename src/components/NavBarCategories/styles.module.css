@@ -96,9 +96,9 @@ li{
 
 
     .bgFilter{
-        background: linear-gradient(to top, #000000d5, #000000bc, #0000009c, #0000009c, transparent);
+        background: linear-gradient(to bottom, #000000d5, #000000bc, #0000009c, #0000009c, transparent);
         position: fixed;
-        top: 50rem;
+        top: -100rem;
         left: 0;
         height: 100vh;
         width: 100%;
